@@ -25,10 +25,11 @@ The web is messy. Data is poorly formatted, websites go down, and closing tags g
 	if html is None:
 		print('URL is not found')
 	else:
-		# _program continues_
+		# program continues
 
 
 When the page is existed, there are still some problems.
 
 If you want to access a tag that does not exists, BeautifulSoup will return a None objects. The problem is, attemping to access a tag on a None object itself will result in an AttributeError being thrown.
 
+When writing scarpers, it's important to think about the overall pattern of your code in order to handle exception.
