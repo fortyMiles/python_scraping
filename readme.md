@@ -33,3 +33,41 @@ When the page is existed, there are still some problems.
 If you want to access a tag that does not exists, BeautifulSoup will return a None objects. The problem is, attemping to access a tag on a None object itself will result in an AttributeError being thrown.
 
 When writing scarpers, it's important to think about the overall pattern of your code in order to handle exception.
+
+
+>> Minchiuan 2015-Aug-14
+>> Chapter 2
+
+_find()_ and _find\_all()_ are the two functions you will likey use the most._
+
+	
+	from urllib.request import urlopen
+	from bs4 import BeautifulSoup
+
+	url = "http://www.pythonscraping.com/pages/warandpeace.html"
+	html = urlopen(url)
+	bsObj = BeautifulSoup(html)
+
+	name_list = bsObj.find_all("span", {"class": "green"})
+	for name in name_list:
+		print(name.get_text())
+
+	'''
+	find_all(tag, attribute, recursive, text, limit, keywords)
+	find(tag, attribute, recursive, text, limit, keywords)
+
+	find_all({"h1", "h2", "h3"}, {"class": "green", "class": "red"})
+
+	args:
+		text: matches text content.
+
+		keywords: select tags that contain a particular attribute.
+
+		For exapmle:
+			
+			all_text = bs_obj.find_all(id='text')
+	'''
+
+	# anything could be done with keyword also could be done with 
+		
+	bs_obj.find_all(id='text') === bs_obj.find_all("", {"id":"text"})
