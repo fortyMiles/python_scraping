@@ -71,3 +71,7 @@ _find()_ and _find\_all()_ are the two functions you will likey use the most._
 	# anything could be done with keyword also could be done with 
 		
 	bs_obj.find_all(id='text') === bs_obj.find_all("", {"id":"text"})
+
+>> 2015-8-17
+
+With web crawlers, you must make every effort to determine if there's a way to make the target server's load easier.
