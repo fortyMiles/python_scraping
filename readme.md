@@ -75,3 +75,7 @@ _find()_ and _find\_all()_ are the two functions you will likey use the most._
 >> 2015-8-17
 
 With web crawlers, you must make every effort to determine if there's a way to make the target server's load easier.
+
+>> About Radom
+
+The different seed, give different random list.
