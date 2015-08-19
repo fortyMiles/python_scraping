@@ -79,3 +79,7 @@ With web crawlers, you must make every effort to determine if there's a way to m
 >> About Radom
 
 The different seed, give different random list.
+
+>> 2015-Aug-18
+
+The Request library is excellent at handling complicated HTTP request.
